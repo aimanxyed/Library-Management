@@ -1,4 +1,4 @@
-namespace BookLibrary.Entities;
+namespace Library_Management.Entities;
 
 /// <summary>
 /// Represents a genre / category tag that can be applied to books.
@@ -11,5 +11,5 @@ public class Tag
     // Navigation property → many-to-many Books via BookTag
     public ICollection<BookTag> BookTags { get; set; } = new List<BookTag>();
 
-    public override string ToString() => $"[Tag #{Id}] {Name}";
+   // public override string ToString() => $"[Tag #{Id}] {Name}";
 }

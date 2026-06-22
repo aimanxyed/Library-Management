@@ -1,7 +1,7 @@
-using BookLibrary.Data;
-using BookLibrary.Entities;
+using Library_Management.Data;
+using Library_Management.Entities;
 
-namespace BookLibrary.Queries;
+namespace Library_Management.Queries;
 
 /// <summary>
 /// TASK 1.3 — Eight LINQ query demonstrations against InMemoryStore.

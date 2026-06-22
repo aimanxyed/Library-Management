@@ -1,8 +1,6 @@
-namespace BookLibrary.Entities;
+namespace Library_Management.Entities;
 
-/// <summary>
-/// Represents a book in the library.
-/// </summary>
+
 public class Book
 {
     public int Id { get; set; }
@@ -19,6 +17,6 @@ public class Book
     // Navigation property → many-to-many Tags via BookTag
     public ICollection<BookTag> BookTags { get; set; } = new List<BookTag>();
 
-    public override string ToString() =>
-        $"[Book #{Id}] \"{Title}\" ({Year}) — {PageCount} pages — AuthorId={AuthorId}";
+    //public override string ToString() =>
+    //    $"[Book #{Id}] \"{Title}\" ({Year}) — {PageCount} pages — AuthorId={AuthorId}";
 }

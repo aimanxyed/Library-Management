@@ -1,4 +1,4 @@
-namespace BookLibrary.Entities;
+namespace Library_Management.Entities;
 
 /// <summary>
 /// Represents a book author.
@@ -11,5 +11,5 @@ public class Author
     // Navigation property — one author has many books
     public ICollection<Book> Books { get; set; } = new List<Book>();
 
-    public override string ToString() => $"[Author #{Id}] {Name}";
+   // public override string ToString() => $"[Author #{Id}] {Name}";
 }

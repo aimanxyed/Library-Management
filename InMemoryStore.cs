@@ -1,6 +1,6 @@
-using BookLibrary.Entities;
+using Library_Management.Entities;
 
-namespace BookLibrary.Data;
+namespace Library_Management.Data;
 
 /// <summary>
 /// TASK 1.2 — Static in-memory data store.
@@ -105,4 +105,5 @@ public static class InMemoryStore
             bt.Tag?.BookTags.Add(bt);
         }
     }
+
 }
